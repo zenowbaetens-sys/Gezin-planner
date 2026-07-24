@@ -1,0 +1,373 @@
+*{
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+
+body{
+
+    margin:0;
+
+    background:#111827;
+
+    color:white;
+
+}
+
+
+
+button{
+
+    cursor:pointer;
+
+    border:none;
+
+    border-radius:10px;
+
+    padding:10px 15px;
+
+}
+
+
+
+
+#menuButton{
+
+    position:fixed;
+
+    top:15px;
+
+    left:15px;
+
+    font-size:22px;
+
+    z-index:10;
+
+}
+
+
+
+
+
+#sideMenu{
+
+    position:fixed;
+
+    left:-260px;
+
+    top:0;
+
+    width:260px;
+
+    height:100%;
+
+    background:#1f2937;
+
+    padding:20px;
+
+    transition:.3s;
+
+    z-index:20;
+
+}
+
+
+
+#sideMenu.open{
+
+    left:0;
+
+}
+
+
+
+#sideMenu button{
+
+    width:100%;
+
+    margin-top:10px;
+
+}
+
+
+
+
+
+
+.page{
+
+    padding:70px 15px;
+
+}
+
+
+
+.hidden{
+
+    display:none !important;
+
+}
+
+
+
+
+
+.main-card{
+
+    background:#1f2937;
+
+    padding:20px;
+
+    border-radius:20px;
+
+    max-width:900px;
+
+    margin:auto;
+
+}
+
+
+
+
+
+
+
+/* KALENDER */
+
+
+.calendar-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:15px;
+
+}
+
+
+
+.weekdays{
+
+    display:grid;
+
+    grid-template-columns:repeat(7,1fr);
+
+    gap:8px;
+
+    margin-bottom:8px;
+
+    text-align:center;
+
+}
+
+
+
+
+
+#calendar{
+
+    display:grid;
+
+    grid-template-columns:repeat(7,1fr);
+
+    gap:8px;
+
+}
+/* DAG VAKKEN */
+
+.calendar-day{
+
+    background:#374151;
+
+    min-height:110px;
+
+    border-radius:12px;
+
+    padding:8px;
+
+    transition:.2s;
+
+    overflow:hidden;
+
+}
+
+
+
+.calendar-day:hover{
+
+    background:#4b5563;
+
+    transform:scale(1.03);
+
+}
+
+
+
+
+
+.calendar-day b{
+
+    font-size:18px;
+
+}
+
+
+
+
+
+.event-box{
+
+    background:#2563eb;
+
+    margin-top:8px;
+
+    padding:6px;
+
+    border-radius:8px;
+
+    font-size:12px;
+
+}
+
+
+
+
+
+/* AFSPRAAK SCHERM */
+
+
+.appointment{
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    height:100%;
+
+    background:#111827;
+
+    padding:25px;
+
+    z-index:50;
+
+}
+
+
+
+
+
+.appointment h2{
+
+    margin-top:50px;
+
+}
+
+
+
+
+
+.close-btn{
+
+    position:absolute;
+
+    top:20px;
+
+    right:20px;
+
+    font-size:22px;
+
+    background:#dc2626;
+
+    color:white;
+
+}
+
+
+
+
+
+.appointment input,
+
+.appointment textarea{
+
+    width:100%;
+
+    padding:12px;
+
+    margin:8px 0 15px;
+
+    border-radius:10px;
+
+    border:none;
+
+    font-size:16px;
+
+}
+
+
+
+
+
+.appointment textarea{
+
+    height:120px;
+
+    resize:none;
+
+}
+
+
+
+
+
+.appointment button:not(.close-btn){
+
+    width:100%;
+
+    background:#2563eb;
+
+    color:white;
+
+    font-size:16px;
+
+}
+
+
+
+
+
+.profile-box img{
+
+    width:120px;
+
+    height:120px;
+
+    border-radius:50%;
+
+}
+#joinCode{
+
+    width:100%;
+    padding:12px;
+    margin-top:15px;
+    border-radius:12px;
+    border:none;
+    background:#374151;
+    color:white;
+    font-size:16px;
+
+}
+
+
+#joinCode::placeholder{
+
+    color:#d1d5db;
+
+}
